@@ -1,0 +1,11 @@
+import random 
+cosa = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+digitos = int(input("cuantos digitos tendra la contraseña?"))
+
+contrasea = ""
+
+for i in range(digitos):
+    contrasea += random.choice(cosa)
+
+print(contrasea)
